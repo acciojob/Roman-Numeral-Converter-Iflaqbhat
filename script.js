@@ -12,7 +12,6 @@ function convertToRoman(num) {
   for (let i = 0; i <= 6; i++) {
         const symbol = obj[i][0];
         const value = obj[i][1];
-
         while (num >= value) {
             roman += symbol;
             num -= value;
