@@ -9,14 +9,17 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
-  //your code here
-	let roman = '';
-    
-    for (const { value, symbol } of romanMap) {
+  for (let i = 0; i <= 6; i++) {
+        const symbol = obj[i][0];
+        const value = obj[i][1];
+
         while (num >= value) {
             roman += symbol;
             num -= value;
         }
+    }
+    
+    return roman;
     }
     
     return roman;
