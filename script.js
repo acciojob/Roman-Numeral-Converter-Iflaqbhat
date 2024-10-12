@@ -9,6 +9,7 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
+	let roman='';
   for (let i = 0; i <= 6; i++) {
         const symbol = obj[i][0];
         const value = obj[i][1];
