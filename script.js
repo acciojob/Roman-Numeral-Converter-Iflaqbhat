@@ -1,5 +1,4 @@
 function convertToRoman(num) {
-  	const obj = {
     const symbols = [
         ['M', 1000], 
         ['CM', 900],
@@ -15,8 +14,8 @@ function convertToRoman(num) {
         ['IV', 4],
         ['I', 1]
     ];
-    };
-  let roman = '';
+
+    let roman = '';
     
     for (let i = 0; i < symbols.length; i++) {
         const [symbol, value] = symbols[i];
@@ -27,8 +26,6 @@ function convertToRoman(num) {
     }
     
     return roman;
-}
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
